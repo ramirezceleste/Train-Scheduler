@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang='en-us'>
+
+<head>
+
+    <meta charset='UTF-8'>
+    <title>Train Scheduler</title>
+    <!-- Reset link -->
+    <link rel="stylesheet" type="text/css" href="assets/reset.css">
+    <!-- Bootstrap CDN -->
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css' integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7'
+        crossorigin='anonymous'>
+    <!-- JQuery link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Firebase link -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>    
+    <!-- Moment link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
+    <!-- Style link  -->
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+
+<body>
+
+ 
+    <div class='container'> 
+
+        <div class='jumbotron text-center'>
+            <h1>Employee Data Management</h1>
+            <br>
+        </div>
+
+        <div class='row' id="employees">
+                <div class='col-lg-12'>
+                    <div class='panel panel-default'>
+                        <div class='panel-heading'>
+                            <h3 class='panel-title'>
+                                <strong>Current Train Schedule</strong>
+                            </h3>
+                        </div>
+    
+                        <div class='panel-body'>
+                                <table class="table">
+                                    <thead> 
+                                    <tr> 
+                                        <th>Train Name</th>
+                                        <th>Destination</th>
+                                        <th>Frequency (min)</th>
+                                        <th>Next Arrival</th>
+                                        <th>Minutes Away</th>
+                                    </tr>
+                                    </thead> 
+                                    <tbody class="tableBody">
+
+                                    </tbody>
+                                </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class='row'>
+
+            <div class='col-lg-12'>
+
+                <div class='panel panel-default'>
+                    <div class='panel-heading'>
+                        <h3 class='panel-title'>
+                            <strong>Add Train</strong>
+                        </h3>
+                    </div>
+
+                    <div class='panel-body'>
+                        <p>Train Name</p>
+                        <input type="text" class="form-control" aria-describedby="basic-addon1" id="trainName">
+                    </div>
+
+
+                    <div class='panel-body'>
+                        <p>Destination</p>
+                        <input type="text" class="form-control" aria-describedby="basic-addon1" id="destination">
+                    </div>
+
+
+                    <div class="panel-body">
+                        <p>First Train Time (military time)</p>
+                        <input type="time" class="form-control" aria-describedby="basic-addon1" id="firstTime">
+                    </div>
+
+                    <div class="panel-body">
+                        <p>Frequency (min)</p>
+                        <input type="text" class="form-control" aria-describedby="basic-addon1" id="frequency">
+                    </div>
+
+                    <div class="panel-body">
+                        <button id="submitButton">Submit</button>
+                       
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src='assets/app.js'></script>
+
+</body>
+
+</html>

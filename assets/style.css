@@ -1,0 +1,7 @@
+.jumbotron {
+    background-color: rgb(142, 217, 252);
+}
+
+.panel-heading {
+    background-color: rgb(142, 217, 252) !important;
+}
