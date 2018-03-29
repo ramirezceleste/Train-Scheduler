@@ -27,8 +27,13 @@ $("#submitButton").on("click", function () {
        minutesAway: ""
        
     });
-    
+    $("#trainName").val("");
+    $("#destination").val("");
+    $("#firstTime").val("");
+    $("#frequency").val("");
 });
+
+
 
 // Get data from the database 
     database.ref().on("child_added", function(snapshot) {
