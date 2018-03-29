@@ -1,7 +1,14 @@
 .jumbotron {
-    background-color: rgb(142, 217, 252);
+    background-image: url("https://scontent-lax3-1.xx.fbcdn.net/v/t31.0-8/29354592_1442696519176129_394404905450052355_o.jpg?_nc_cat=0&oh=731875d251ea16e14b5575d9247a74d3&oe=5B35D9C5");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .panel-heading {
-    background-color: rgb(142, 217, 252) !important;
+    background-color: rgb(140, 205, 176) !important;
+}
+
+#submitButton {
+    background-color: rgb(140, 205, 176) !important;
 }
